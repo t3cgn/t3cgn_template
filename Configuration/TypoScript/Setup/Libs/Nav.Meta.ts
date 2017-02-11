@@ -6,7 +6,7 @@ lib.navMeta {
 
     1 = TMENU
     1 {
-        wrap = <ul>|</ul>
+        wrap = <ul class="metaNavigation">|</ul>
         expAll = 1
         NO.wrapItemAndSub = <li>|</li>
 

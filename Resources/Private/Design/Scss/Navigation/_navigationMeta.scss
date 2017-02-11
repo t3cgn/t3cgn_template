@@ -1,0 +1,10 @@
+.metaNavigation {
+  float: right;
+  li {
+    display: inline-block;
+    float: left;
+    &:after {
+      content: '|';
+    }
+  }
+}

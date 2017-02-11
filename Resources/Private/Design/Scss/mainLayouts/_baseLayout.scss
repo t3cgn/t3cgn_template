@@ -16,16 +16,23 @@ body {
   font-family: $font-family-sans-serif;
 }
 
-// Arranges main template
-.container-fluid {
+.stars {
   background-image: inline-image('stars.svg');
   background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+// Arranges main template
+.container-fluid {
   max-width: 1280px;
   position: relative;
   footer {
+    @include make-row();
     bottom: 0;
     position: absolute;
     width: 100%;
+    z-index: 20;
   }
 }
 
