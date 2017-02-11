@@ -1,0 +1,28 @@
+// Sets height of html, body, container-fluid to viewport height
+html,
+body,
+.container-fluid {
+  height: 100%;
+  color: $white;
+}
+
+body {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1a292b+0,1a292b+50,182628+100 */
+  background: #1a292b; /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover,  #1a292b 0%, #1a292b 50%, #182628 100%); /* FF3.6-15 */
+  background: -webkit-radial-gradient(center, ellipse cover,  #1a292b 0%,#1a292b 50%,#182628 100%); /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center,  #1a292b 0%,#1a292b 50%,#182628 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a292b', endColorstr='#182628',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+// Arranges main template
+.container-fluid {
+  position: relative;
+  background-image: inline-image('stars.svg');
+  background-size: cover;
+  footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+  }
+}

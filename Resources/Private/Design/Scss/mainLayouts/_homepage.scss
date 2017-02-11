@@ -1,0 +1,25 @@
+
+
+.parallaxLayers.planets {
+  bottom: 0;
+  height: 65%;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  .layer {
+    position: absolute;
+    bottom: 0;
+    &.layer1 {
+      bottom: -14%;
+    }
+    &.layer2 {
+      bottom: -5%;
+    }
+    &.layer3 {
+      bottom: -11%;
+    }
+    &.layer4 {
+      bottom: -5%;
+    }
+  }
+}
