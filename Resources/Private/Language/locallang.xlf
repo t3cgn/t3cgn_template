@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2017-02-11T10:06:14Z" product-name="t3cgn_template">
+        <header/>
+        <body>
+
+            <trans-unit id="header.language.language">
+                <source>Language</source>
+            </trans-unit>
+
+            <trans-unit id="header.searchform.search">
+                <source>Search</source>
+            </trans-unit>
+
+        </body>
+    </file>
+</xliff>

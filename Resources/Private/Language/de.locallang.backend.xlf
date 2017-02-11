@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2017-02-11T10:06:14Z" product-name="t3cgn_template">
+        <header/>
+        <body>
+
+            <trans-unit id="backend_layout.homepage.title">
+                <target>Startseite</target>
+            </trans-unit>
+
+            <trans-unit id="backend_layout.contentpage.title">
+                <target>Contentseite (1spaltig)</target>
+            </trans-unit>
+
+        </body>
+    </file>
+</xliff>

@@ -1,0 +1,15 @@
+<form action="index.php?id=11" method="post" id="tx_indexedsearch_top" role="search">
+    <fieldset>
+        <legend class="hidden">Suchbegriff eingeben</legend>
+        <label for="searchbox-top"><f:translate key="header.searchform.search" extensionName="t3cgn_template"/></label>
+        <span class="search-input">
+            <input name="tx_indexedsearch[sword]" id="searchbox-top" value="" class="search" type="text"/>
+        </span>
+        <span class="search-button">
+            <input class="image" type="image"
+                   src="/typo3conf/ext/t3cgn_template/Resources/Public/Images/header_button_suche.gif" name="submit"
+                   alt="Suchen">
+        </span>
+    </fieldset>
+    <input type="hidden" name="tx_indexedsearch[sections]" value="0"/>
+</form>

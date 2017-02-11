@@ -1,0 +1,1 @@
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:t3cgn_template/Configuration/TypoScript/Constants">
