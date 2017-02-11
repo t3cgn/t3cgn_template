@@ -2,8 +2,8 @@
 html,
 body,
 .container-fluid {
-  height: 100%;
   color: $white;
+  height: 100%;
 }
 
 body {
@@ -13,16 +13,23 @@ body {
   background: -webkit-radial-gradient(center, ellipse cover,  #1a292b 0%,#1a292b 50%,#182628 100%); /* Chrome10-25,Safari5.1-6 */
   background: radial-gradient(ellipse at center,  #1a292b 0%,#1a292b 50%,#182628 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a292b', endColorstr='#182628',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  font-family: $font-family-sans-serif;
 }
 
 // Arranges main template
 .container-fluid {
-  position: relative;
   background-image: inline-image('stars.svg');
   background-size: cover;
+  max-width: 1280px;
+  position: relative;
   footer {
+    bottom: 0;
     position: absolute;
     width: 100%;
-    bottom: 0;
   }
+}
+
+// Fonts
+h1, h2, h3, h4 {
+  font-family: $headings-font-family;
 }

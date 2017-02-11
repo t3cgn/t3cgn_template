@@ -1,5 +1,14 @@
+// Compass tools
+@import "compass/css3";
+
+// Basic configuration
+// Prepares overwriting of bootstrap variables
+@import "Base/fonts";
+
+// Adds needed bootstrap modules and overwritten variables
 @import "bootstrapImports";
 @import "bootstrapVariables";
 
-@import "mainLayouts/baseLayout";
-@import "mainLayouts/homepage";
+// T3CGN specific styles
+@import "MainLayouts/baseLayout";
+@import "MainLayouts/homepage";

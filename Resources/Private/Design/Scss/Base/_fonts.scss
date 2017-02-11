@@ -1,0 +1,6 @@
+// Imports Source Sans Pro
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+// Adds Share
+// Regular
+@include font-face("Share-Regular", font-files("Share-TTF/Share-Regular.ttf", "Share-OTF/Share-Regular.otf"));
