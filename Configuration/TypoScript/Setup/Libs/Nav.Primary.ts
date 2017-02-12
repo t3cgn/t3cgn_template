@@ -7,7 +7,7 @@ lib.navPrimary {
         noBlur = 1
         expAll = 1
         wrap (
-            <nav class="navbar navbar-toggleable-lg navigationPrimary">
+            <nav class="navbar navbar-toggleable navigationPrimary">
 
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navigationPrimary" aria-controls="navigationPrimary" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
