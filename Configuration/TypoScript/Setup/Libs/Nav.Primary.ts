@@ -13,7 +13,7 @@ lib.navPrimary {
                     <span class="navbar-toggler-icon"></span>
                 </button>
                  <div class="collapse navbar-collapse" id="navigationPrimary">
-                    <ul class="navbar-nav mr-auto">
+                    <ul class="navbar-nav mr-auto gooey-menu">
                         |
                     </ul>
                 </div>

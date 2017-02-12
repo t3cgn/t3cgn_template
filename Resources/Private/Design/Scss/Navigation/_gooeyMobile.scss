@@ -1,0 +1,136 @@
+@import "compass/css3";
+
+//vars
+$pi:3.14;
+
+//config
+$nav-items:9;
+$open-distance:105px;
+$opening-angle:$pi*2;
+
+%goo{
+  filter:url('#shadowed-goo');
+  // debug
+  //background:rgba(255,0,0,0.2);
+}
+%ball{
+  background:$brand-primary;
+  border-radius:100%;
+  width:80px;
+  height:80px;
+  margin-left:-40px;
+  position:absolute;
+  top:20px;
+  color:$white;
+  text-align:center;
+  line-height:80px;
+  transform:translate3d(0,0,0);
+  transition:transform ease-out 200ms;
+}
+.gooey-menu-open{
+  display:none;
+}
+.nav-item{
+  a {
+    color: $white;
+    display: block;
+    line-height: 5rem;
+    padding: 0;
+    position: relative;
+    &:hover {
+      background: transparent;
+      color: $brand-primary;
+    }
+    &:before {
+      content: '';
+      display: inline-block;
+      height: 5rem;
+      position: absolute;
+      left: -6rem;
+      width: 5rem;
+    }
+  }
+
+
+  @for $i from 1 through $nav-items {
+    //&:nth-child({$i+1}) a:before {
+    &:nth-child(#{$i}) a:before {
+      background: inline-image('02_menu_svgs/planet' + $i + '.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+
+}
+
+.navbar-toggler {
+  background: inline-image('02_menu_svgs/planet-0-menu.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 6rem;
+  position:absolute;
+  top:20px;
+  transform:translate3d(0,0,0);
+  transition:transform ease-out 200ms;
+  width: 6rem;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.gooey-menu{
+  @extend %goo;
+  $width:100%;
+  $height:150px;
+  position:absolute;
+  left:50%;
+  margin-left: 0;
+  padding-top:20px;
+  width:auto;
+  height:$height;
+  box-sizing:border-box;
+  font-size:20px;
+  text-align:left;
+}
+
+
+.nav-item{
+  &:hover{
+    background: transparent;
+    color:$brand-primary;
+  }
+  @for $i from 1 through $nav-items{
+    &:nth-child(#{$i+2}){
+      transition-duration:180ms;
+    }
+  }
+}
+
+.navbar-toggler[aria-expanded=true]{
+  @extend %ball;
+  z-index:2;
+  transition-timing-function:cubic-bezier(0.175, 0.885, 0.320, 1.275);
+  transition-duration:400ms;
+  transform:scale(1.1,1.1) translate3d(0,0,0);
+  cursor:pointer;
+}
+.navbar-toggler[aria-expanded=true]:hover{
+  transform:scale(1.2,1.2) translate3d(0,0,0);
+}
+.navbar-collapse.show,
+.navbar-toggler[aria-expanded=true]{
+  transition-timing-function:linear;
+  transition-duration:200ms;
+ // transform:scale(0.8,0.8) translate3d(0,0,0);
+}
+
+.navbar-collapse.show .nav-item {
+  transition-timing-function:cubic-bezier(0.165, 0.840, 0.440, 1.000);
+  @for $i from 1 through $nav-items{
+
+    &:nth-child(#{$i+1}){
+      transition-duration:90ms+(100ms*$i);
+      transform:translate3d(0,40px*$i,0);
+    }
+  }
+}

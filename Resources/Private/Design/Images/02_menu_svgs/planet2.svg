@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+<g>
+	<g>
+		<g>
+			<circle fill="#BA935C" cx="100.2" cy="99.7" r="98.7"/>
+		</g>
+		<g>
+			<g>
+				<ellipse fill="#AB6A2A" cx="52.2" cy="38.7" rx="8.5" ry="10.9"/>
+				<ellipse fill="#AB6A2A" cx="114.7" cy="32.1" rx="12" ry="8.9"/>
+				<ellipse fill="#AB6A2A" cx="153.9" cy="48.4" rx="8.5" ry="6.6"/>
+				
+					<ellipse transform="matrix(0.9459 0.3246 -0.3246 0.9459 28.0829 -27.2312)" fill="#AB6A2A" cx="95.7" cy="70.6" rx="7" ry="6.2"/>
+				<ellipse fill="#AB6A2A" cx="114.7" cy="128.5" rx="12.8" ry="9.7"/>
+				<ellipse fill="#AB6A2A" cx="153.6" cy="90.4" rx="7.4" ry="6.6"/>
+				<ellipse fill="#AB6A2A" cx="164" cy="139.7" rx="7" ry="6.2"/>
+				<ellipse fill="#AB6A2A" cx="127.5" cy="176.2" rx="9.3" ry="5.4"/>
+				<ellipse fill="#AB6A2A" cx="79" cy="166.1" rx="5.8" ry="6.2"/>
+				<ellipse fill="#AB6A2A" cx="54.1" cy="127.7" rx="13.6" ry="8.9"/>
+				<ellipse fill="#AB6A2A" cx="28.9" cy="85.7" rx="7" ry="6.6"/>
+				
+					<ellipse transform="matrix(0.9792 0.2031 -0.2031 0.9792 32.6578 -5.4413)" fill="#AB6A2A" cx="42.8" cy="156.4" rx="6.2" ry="4.3"/>
+			</g>
+		</g>
+	</g>
+	<g>
+		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="1.534" y1="99.6822" x2="100.2112" y2="99.6822">
+			<stop  offset="0" style="stop-color:#1A171B;stop-opacity:0.5"/>
+			<stop  offset="2.616996e-02" style="stop-color:#1A171B;stop-opacity:0.4869"/>
+			<stop  offset="1" style="stop-color:#1A171B;stop-opacity:0"/>
+		</linearGradient>
+		<path fill="url(#SVGID_1_)" d="M52.5,99.7c0,68.8,47.7,98.7,47.7,98.7c-54.5,0-98.7-44.2-98.7-98.7C1.5,45.2,45.7,1,100.2,1
+			C100.2,1,52.5,33.4,52.5,99.7z"/>
+	</g>
+</g>
+</svg>
