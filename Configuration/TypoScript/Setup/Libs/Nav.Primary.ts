@@ -1,43 +1,45 @@
 lib.navPrimary = HMENU
 lib.navPrimary {
-
-    entryLevel = 1
-
-    ### Erste Ebene ###
+    special = directory
+    special.value = 1
     1 = TMENU
     1 {
-        expAll = 0
         noBlur = 1
-        wrap = <ul>|</ul>
+        expAll = 1
+        wrap (
+            <nav class="navbar navbar-toggleable-lg navigationPrimary">
 
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navigationPrimary" aria-controls="navigationPrimary" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                 <div class="collapse navbar-collapse" id="navigationPrimary">
+                    <ul class="navbar-nav mr-auto">
+                        |
+                    </ul>
+                </div>
+            </nav>
+        )
         NO = 1
-        NO.ATagTitle.field = abstract // description // title
-        # NO.allWrap = |<span class="hidden">.</span>
-        NO.wrapItemAndSub = <li>|</li>
-        NO.stdWrap.htmlSpecialChars = 1
-
-        CUR < .NO
-        CUR = 1
-        CUR.allWrap = <strong>|</strong>
-        CUR.doNotLinkIt = 1
-        CUR.stdWrap.htmlSpecialChars = 1
-
+        NO.stdWrap.htmlSpecialChars = 0
+        NO.wrapItemAndSub.insertData=1
+        NO.wrapItemAndSub = <li class="nav-item m{field:uid} p{field:pid}">|</li>
+        NO.ATagParams = class="nav-link"
         ACT < .NO
-        ACT = 1
-        ACT.allWrap = <em>|</em>
-
+        ACT.wrapItemAndSub= <li class="nav-item active m{field:uid} p{field:pid}">|</li>
+        CUR < .NO
+        CUR.wrapItemAndSub= <li class=" nav-item active current m{field:uid} p{field:pid}">|</li>
         IFSUB < .NO
-        IFSUB = 1
-        # IFSUB.allWrap = |<span class="aural">:</span>
-
+        IFSUB.wrapItemAndSub= <li class="dropdown nav-item m{field:uid} p{field:pid}">|</li>
+        IFSUB.ATagParams = class="nav-link dropdown-toggle"
         ACTIFSUB < .NO
-        ACTIFSUB = 1
-        ACTIFSUB.allWrap = <em>|</em><span class="aural">:</span>
+        ACTIFSUB.wrapItemAndSub= <li class="dropdown nav-item active ifsub m{field:uid} p{field:pid}">|</li>
+        ACTIFSUB.ATagParams = class="nav-link dropdown-toggle"
+        CURIFSUB < .NO
+        CURIFSUB.wrapItemAndSub= <li class="dropdown nav-item active current ifsub m{field:uid} p{field:pid}">|</li>
+        CURIFSUB.ATagParams = class="nav-link dropdown-toggle"
     }
-
-    ### Zweite, dritte und vierte Ebene (Kopieren von erster Ebene) ###
-    2 < .1
-    3 < .1
-    4 < .1
-
+    2 < .1 {
+        wrap = <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">|</div>
+        NO.ATagParams = class="dropdown-link"
+    }
 }
