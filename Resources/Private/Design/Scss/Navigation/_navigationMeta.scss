@@ -3,8 +3,31 @@
   li {
     display: inline-block;
     float: left;
+    a {
+      color: $white;
+      &:hover {
+        color: $brand-primary;
+        text-decoration: underline;
+      }
+    }
     &:after {
       content: '|';
+      display: inline-block;
+      padding: 0 5px;
+    }
+    &:last-child {
+      &:after {
+        content: '';
+      }
+    }
+  }
+}
+
+.homepage {
+  .metaNavigation {
+    color: $black;
+    a {
+      color: $black;
     }
   }
 }
