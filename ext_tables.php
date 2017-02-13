@@ -5,15 +5,6 @@ if (!defined('TYPO3_MODE')) {
 }
 
 /**
- * Default TypoScript
- */
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
-    't3cgn_template',
-    'Configuration/TypoScript',
-    'T3CGN Template'
-);
-
-/**
  * Adding page- and user tsconfig
  */
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
