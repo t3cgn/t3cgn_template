@@ -8,7 +8,7 @@ if (!defined('TYPO3_MODE')) {
  * Default TypoScript
  */
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
-    $_EXTKEY,
+    't3cgn_template',
     'Configuration/TypoScript',
     'T3CGN Template'
 );
