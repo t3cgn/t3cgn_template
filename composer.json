@@ -1,0 +1,20 @@
+{
+  "name": "t3cgn/t3cgn-template",
+  "description": "Provides templates and styles",
+  "authors": [
+    {"name": "Vanessa Kestering", "email": "vanessa.kestering@t3cgn.de"}
+  ],
+  "type": "typo3-cms-extension",
+  "require": {
+    "typo3/cms-core": ">=8.5.0 <9.0.0"
+  },
+  "replace": {
+    "t3cgn_template": "self.version",
+    "typo3-ter/t3cgn-template": "self.version"
+  },
+  "autoload": {
+    "psr-4": {
+      "T3CGN\\T3cgnTemplate\\": "Classes/"
+    }
+  }
+}
