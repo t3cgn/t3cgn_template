@@ -7,7 +7,7 @@ lib.navPrimary {
         noBlur = 1
         expAll = 1
         wrap (
-            <nav class="navbar navbar-toggleable navigationPrimary">
+            <nav class="navbar navbar-toggleable navigationPrimary mobile">
 
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navigationPrimary" aria-controls="navigationPrimary" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -42,4 +42,28 @@ lib.navPrimary {
         wrap = <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">|</div>
         NO.ATagParams = class="dropdown-link"
     }
+}
+
+
+lib.navPrimaryDesktop < lib.navPrimary
+lib.navPrimaryDesktop {
+    1.wrap (
+        <nav class="menu navigationPrimary desktop">
+            <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open"/>
+            <label class="menu-open-button" for="menu-open"></label>
+
+            |
+        </nav>
+    )
+    1.NO.wrapItemAndSub = |
+    1.NO.ATagParams = class="menu-item"
+
+    1.ACT.wrapItemAndSub= |
+    1.ACT.ATagParams = class="menu-item"
+    1.CUR.wrapItemAndSub= |
+    1.CUR.ATagParams = class="menu-item"
+    1.ACTIFSUB.wrapItemAndSub= |
+    1.ACTIFSUB.ATagParams = class="menu-item"
+    1.CURIFSUB.wrapItemAndSub= |
+    1.CURIFSUB.ATagParams = class="menu-item"
 }

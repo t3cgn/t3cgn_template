@@ -1,14 +1,21 @@
+// Includes mobile menu for media-breakpoint-down(sm)
+@import "gooeyMobile";
+
+// Includes desktop menu for media-breakpoint-up(sm)
+@import "gooeyDesktop";
+
 .navbar.navigationPrimary {
   .navbar-toggler {
     background: inline-image('02_menu_svgs/planet-0-menu.svg');
     background-size: contain;
     background-repeat: no-repeat;
-    height: 6rem;
-    width: 6rem;
+    height: 5.5rem;
+    width: 6.5rem;
     &:hover {
       cursor: pointer;
     }
+    &:focus {
+      outline: none;
+    }
   }
 }
-
-@import "gooeyMobile";

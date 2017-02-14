@@ -20,7 +20,8 @@ page.10 {
         # navigation libs
         navMeta       = < lib.navMeta
         navBreadcrumb = < lib.navBreadcrumb
-        navPrimary    = < lib.navPrimary
+        navPrimaryDesktop    = < lib.navPrimaryDesktop
+        navPrimaryMobile    = < lib.navPrimary
         navLanguage   = < lib.navLanguage
 
         # Header

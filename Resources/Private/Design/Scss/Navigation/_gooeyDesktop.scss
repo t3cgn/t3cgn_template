@@ -1,0 +1,120 @@
+@import "compass/css3";
+
+@include media-breakpoint-up(sm) {
+
+  .navigationPrimary.mobile {
+    display: none;
+  }
+
+  //vars
+  $pi:3.14;
+
+  //config
+  $menu-items:6+1;
+  $planetnumber: 8;
+  $open-distance:155px;
+  $opening-angle:$pi*2;
+
+  .menu-open{
+    display:none;
+  }
+  .menu-item{
+    width:80px;
+    height:80px;
+    margin-left:-40px;
+    position:absolute;
+    top:20px;
+    color:white;
+    text-align:center;
+    line-height:80px;
+    transform:translate3d(0,0,0);
+    transition:transform ease-out 200ms;
+    opacity: 0;
+    @for $i from 1 through $planetnumber {
+      &:nth-child(#{$i+2}){
+        transition-duration:180ms;
+      }
+      &:nth-child(#{$i}) {
+        & {
+          background: inline-image('02_menu_svgs/planet' + $i + '.svg');
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+  }
+
+  .menu{
+    $width:380px;
+    $height:250px;
+    position:absolute;
+    left:50%;
+    margin-left:-$width/2;
+    padding-top:20px;
+    padding-left:$width/2;
+    width:$width;
+    height:$height;
+    box-sizing:border-box;
+    font-size:20px;
+    text-align:left;
+    margin-left: -190px;
+    top: 50%;
+    margin-top: -100px;
+  }
+
+
+  .menu-item{
+    &:hover{
+
+    }
+    @for $i from 1 through $menu-items{
+      &:nth-child(#{$i+2}){
+        transition-duration:180ms;
+      }
+    }
+  }
+
+  .menu-open-button{
+    background:$white;
+    border-radius:100%;
+    width:80px;
+    height:80px;
+    margin-left:-40px;
+    position:absolute;
+    top:20px;
+    color:white;
+    text-align:center;
+    line-height:80px;
+    transform:translate3d(0,0,0);
+    transition:transform ease-out 200ms;
+    z-index:2;
+    transition-timing-function:cubic-bezier(0.175, 0.885, 0.320, 1.275);
+    transition-duration:400ms;
+    transform:scale(1.1,1.1) translate3d(0,0,0);
+    cursor:pointer;
+
+    background: inline-image('02_menu_svgs/planet-0-menu.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 5.5rem;
+    width: 6.5rem;
+  }
+  .menu-open-button:hover{
+    transform:scale(1.2,1.2) translate3d(0,0,0);
+  }
+
+
+  .menu-open:checked~.menu-item{
+    opacity: 1;
+    transition-timing-function:cubic-bezier(0.935, 0.000, 0.340, 1.330);
+    @for $i from 1 through $menu-items{
+      $angle:(($pi - $opening-angle)/2)+(($opening-angle/($menu-items - 1))*($i - 1));
+
+      &:nth-child(#{$i+2}){
+        transition-duration:80ms+(100ms*$i);
+        transform:translate3d(cos($angle)*$open-distance,sin($angle)*$open-distance,0);
+      }
+    }
+  }
+
+}
