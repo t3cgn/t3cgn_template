@@ -1,0 +1,20 @@
+// Scss mixin to convert pixel values to rem
+
+@function rem($values){
+  $max: length($values);
+  $remValues: '';
+  @for $i from 1 through $max {
+    $value: (nth($values, $i));
+    $value: $value / 16;
+    $remValues: #{$remValues + $value}rem;
+    @if $i < $max {
+      $remValues: #{$remValues + " "};
+    }
+  }
+  @return $remValues;
+}
+
+// Usage example
+//  .div {
+//    margin: rem(10 20 30 40);
+//  }

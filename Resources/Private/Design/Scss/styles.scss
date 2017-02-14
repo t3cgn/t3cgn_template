@@ -1,6 +1,9 @@
 // Compass tools
 @import "compass/css3";
 
+// Global mixins
+@import "Mixins/remCalculation";
+
 // Basic configuration
 // Prepares overwriting of bootstrap variables
 @import "Base/fonts";

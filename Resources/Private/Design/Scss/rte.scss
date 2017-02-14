@@ -1,0 +1,19 @@
+// Compass tools
+@import "compass/css3";
+
+// Basic configuration
+// Prepares overwriting of bootstrap variables
+@import "Base/fonts";
+@import "bootstrapVariables";
+
+h1, h2, h3, h4 {
+  font-family: 'Share-Regular', sans-serif;
+}
+
+p {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+a.btn-primary {
+  color: $brand-primary;
+}
