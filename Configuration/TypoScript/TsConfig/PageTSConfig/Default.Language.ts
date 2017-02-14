@@ -1,4 +1,4 @@
 mod.SHARED {
-    defaultLanguageFlag = en-us-gb.gif
+    defaultLanguageFlag = gb
     defaultLanguageLabel = english
 }
