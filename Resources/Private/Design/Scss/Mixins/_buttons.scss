@@ -1,0 +1,19 @@
+@mixin button($background, $color, $hoverbg, $hovercolor) {
+  background: $background;
+  border: 1px solid $color;
+  color: $color;
+  padding: rem(15 25);
+  &:hover {
+    background: $hoverbg;
+    border-color: $hoverbg;
+    color: $hovercolor;
+  }
+}
+
+.btn-default {
+  @include button(transparent, $white, $white, $black);
+}
+
+.btn-primary {
+  @include button(transparent, $brand-primary, $brand-primary, $white);
+}

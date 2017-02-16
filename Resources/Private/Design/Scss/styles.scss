@@ -2,6 +2,8 @@
 @import "compass/css3";
 
 // Global mixins
+@import "variables";
+@import "mixins";
 @import "Mixins/remCalculation";
 
 // Basic configuration
@@ -13,6 +15,10 @@
 @import "bootstrapVariables";
 
 // T3CGN specific styles
+// Mixins
+@import "Mixins/buttons";
+
+// Template
 @import "MainLayouts/baseLayout";
 @import "MainLayouts/homepage";
 
