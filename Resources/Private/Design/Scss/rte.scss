@@ -12,8 +12,13 @@ h1, h2, h3, h4 {
 
 p {
   font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1rem;
 }
 
 a.btn-primary {
+  color: $brand-primary;
+}
+
+a.btn-default {
   color: $brand-primary;
 }
