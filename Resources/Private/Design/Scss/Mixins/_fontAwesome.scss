@@ -1,11 +1,12 @@
 // will be included in :before
 // Icons in t3cgn_template/Resources/Private/Design/Vendor/font-awesome/scss/_icons.scss
-@mixin fontAwesome($icon, $fixed-width: false) {
+@mixin fontAwesome($icon, $fixedWidth: false, $iconColor: $brand-primary) {
   @include fa-icon();
   content: $icon;
   padding-right: 8px;
+  color: $iconColor;
 
-  @if($fixed-width) {
+  @if($fixedWidth) {
     @extend .fa-fw;
   }
 }

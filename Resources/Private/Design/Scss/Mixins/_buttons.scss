@@ -1,4 +1,4 @@
-@mixin button($background, $color, $hoverbg, $hovercolor, $icon) {
+@mixin button($background, $color, $hoverbg, $hovercolor, $icon, $iconColor, $iconHoverColor) {
   background: $background;
   border: 1px solid $color;
   color: $color;
@@ -11,6 +11,7 @@
   transition: color 1s;
   &:before {
     @include fontAwesome($icon);
+    transition: color 1s;
   }
   &:after {
     content: "";
@@ -25,12 +26,18 @@
     transform: translateX(5%) translateY(-20%) rotate(135deg);
     transition: transform 1s;
   }
+  &:before {
+    color: $iconColor;
+  }
   &:hover {
     background: transparent;
     border-color: $hoverbg;
     color: $hovercolor;
     text-decoration: none;
     text-shadow: none;
+    &:before {
+      color: $iconHoverColor;
+    }
     &::after {
       transform: translateY(-20%) translateX(50%) rotate(135deg);
     }
@@ -38,14 +45,14 @@
 }
 
 .btn-default {
-  @include button(transparent, $white, $white, $black, $fa-var-link);
+  @include button(transparent, $white, $white, $black, $fa-var-link, $white, $black);
 }
 
 .btn-primary {
-  @include button(transparent, $brand-primary, $brand-primary, $white, $fa-var-link);
+  @include button(transparent, $brand-primary, $brand-primary, $white, $fa-var-link, $brand-primary, $white);
 }
 
 input[type="submit"],
 button[type="submit"] {
-  @include button(transparent, $brand-primary, $brand-primary, $white, $fa-var-paper-plane);
+  @include button(transparent, $brand-primary, $brand-primary, $white, $fa-var-paper-plane, $brand-primary, $white);
 }
