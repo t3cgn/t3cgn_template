@@ -19,15 +19,16 @@ body {
   background-image: inline-image('stars.svg');
   background-size: cover;
   height: 100%;
-  padding-bottom: rem(30);
   width: 100%;
   footer {
-    bottom: 0;
-    position: absolute;
-    right: rem(20);
-    width: 100%;
+    @include clearfix;
     z-index: 20;
   }
+}
+
+// Element margin
+.offsetBox > div {
+  margin-bottom: rem(45);
 }
 
 // Arranges main template
@@ -40,9 +41,4 @@ body {
   > .content > .col {
     max-width: rem(1280);
   }
-}
-
-// Fonts
-h1, h2, h3, h4 {
-  font-family: $headings-font-family;
 }

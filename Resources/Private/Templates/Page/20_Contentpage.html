@@ -8,17 +8,20 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid backgroundBox collapse" id="hiddenSegment">
-        <div class="content">
-            <div class="offsetBox">
-                <f:format.raw>{mainMiddle}</f:format.raw>
+    <f:if condition="{mainMiddle}">
+        <div class="container-fluid backgroundBox collapse" id="hiddenSegment">
+            <div class="content">
+                <div class="offsetBox">
+                    <f:format.raw>{mainMiddle}</f:format.raw>
+                </div>
             </div>
         </div>
-    </div>
+    </f:if>
     <div class="container-fluid">
         <div class="content">
             <div class="offsetBox">
                 <f:format.raw>{mainBottom}</f:format.raw>
+                <f:render partial="PageFooter" arguments="{_all}"/>
             </div>
         </div>
     </div>

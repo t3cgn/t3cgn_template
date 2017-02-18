@@ -1,7 +1,7 @@
 lib.t3cgn_gridelements {
     2col < lib.gridelements.defaultGridSetup
     2col {
-        wrap = <div class="row">|</div>
+        wrap = <div class="row gridElement">|</div>
         columns {
             101 < .default
             101.wrap = <div class="col-md">|</div>
