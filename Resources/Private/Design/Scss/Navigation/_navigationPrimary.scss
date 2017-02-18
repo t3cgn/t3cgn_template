@@ -4,13 +4,17 @@
 // Includes desktop menu for media-breakpoint-up(sm)
 @import "gooeyDesktop";
 
-.navbar.navigationPrimary {
+.navigationPrimary {
   .navbar-toggler {
     background: inline-image('02_menu_svgs/planet-0-menu.svg');
     background-size: contain;
     background-repeat: no-repeat;
     height: 5.5rem;
     width: 6.5rem;
+    &.on {
+      background: inline-image('02_menu_svgs/planet-0-menu-close.svg');
+      background-repeat: no-repeat;
+    }
     &:hover {
       cursor: pointer;
     }

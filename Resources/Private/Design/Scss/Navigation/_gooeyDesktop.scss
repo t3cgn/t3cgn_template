@@ -6,6 +6,10 @@
     display: none;
   }
 
+  .navigationPrimary.desktop {
+    display: block;
+  }
+
   //vars
   $pi:3.14;
 
@@ -47,26 +51,25 @@
   .menu{
     $width:380px;
     $height:250px;
-    position:absolute;
-    left:50%;
-    margin-left:-$width/2;
-    padding-top:20px;
-    padding-left:$width/2;
-    width:$width;
-    height:$height;
+    position: absolute;
+    right: 0;
+    width: rem(124);
     box-sizing:border-box;
     font-size:20px;
     text-align:left;
-    margin-left: -190px;
-    top: 50%;
-    margin-top: -100px;
+    &.clicked {
+      position:absolute;
+      left:50%;
+      padding-top:20px;
+      padding-left:$width/2;
+      margin-left: -190px;
+      top: 50%;
+      margin-top: -100px;
+    }
   }
 
 
   .menu-item{
-    &:hover{
-
-    }
     @for $i from 1 through $menu-items{
       &:nth-child(#{$i+2}){
         transition-duration:180ms;
@@ -77,8 +80,6 @@
   .menu-open-button{
     background:$white;
     border-radius:100%;
-    width:80px;
-    height:80px;
     margin-left:-40px;
     position:absolute;
     top:20px;
@@ -98,6 +99,8 @@
     background-repeat: no-repeat;
     height: 5.5rem;
     width: 6.5rem;
+
+
   }
   .menu-open-button:hover{
     transform:scale(1.2,1.2) translate3d(0,0,0);
@@ -109,6 +112,13 @@
     transition-timing-function:cubic-bezier(0.935, 0.000, 0.340, 1.330);
     @for $i from 1 through $menu-items{
       $angle:(($pi - $opening-angle)/2)+(($opening-angle/($menu-items - 1))*($i - 1));
+
+
+      &:nth-child(#{random($menu-items)}) {
+      $randomSize: rem(100);
+        width: $randomSize;
+        height: $randomSize;
+      }
 
       &:nth-child(#{$i+2}){
         transition-duration:80ms+(100ms*$i);

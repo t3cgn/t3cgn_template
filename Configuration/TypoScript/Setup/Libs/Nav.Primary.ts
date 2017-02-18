@@ -9,7 +9,7 @@ lib.navPrimary {
         wrap (
             <nav class="navbar navbar-toggleable navigationPrimary mobile">
 
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navigationPrimary" aria-controls="navigationPrimary" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler navbar-toggler-right menu-open-button" type="button" data-toggle="collapse" data-target="#navigationPrimary" aria-controls="navigationPrimary" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                  <div class="collapse navbar-collapse" id="navigationPrimary">
@@ -57,7 +57,7 @@ lib.navPrimaryDesktop {
     )
     1.NO.wrapItemAndSub = |
     1.NO.ATagParams = class="menu-item"
-
+    1.NO.stdWrap.wrap = <span>|</span>
     1.ACT.wrapItemAndSub= |
     1.ACT.ATagParams = class="menu-item"
     1.CUR.wrapItemAndSub= |
