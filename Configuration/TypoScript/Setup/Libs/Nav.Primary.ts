@@ -38,10 +38,6 @@ lib.navPrimary {
         CURIFSUB.wrapItemAndSub= <li class="dropdown nav-item active current ifsub m{field:uid} p{field:pid}">|</li>
         CURIFSUB.ATagParams = class="nav-link dropdown-toggle"
     }
-    2 < .1 {
-        wrap = <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">|</div>
-        NO.ATagParams = class="dropdown-link"
-    }
 }
 
 
