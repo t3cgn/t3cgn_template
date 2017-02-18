@@ -15,12 +15,13 @@
 @import "bootstrapVariables";
 
 // T3CGN specific styles
+
 // Mixins
 @import "Mixins/fontAwesome";
 @import "Mixins/buttons";
 
-
 // Template
+@import "Base/grid";
 @import "MainLayouts/baseLayout";
 @import "MainLayouts/homepage";
 

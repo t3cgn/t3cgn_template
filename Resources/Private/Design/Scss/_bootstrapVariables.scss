@@ -70,11 +70,13 @@ $font-family-base:       $font-family-sans-serif !default;
 $font-size-base: 1.3rem;
 $font-size-lg:   1.25rem;
 $font-size-sm:   .875rem;
-$font-size-xs:   .75rem;
+$font-size-xs:   1.2rem;
 
-$line-height-base: 1.5 !default;
+$line-height-base: 1.5;
+$line-height-xs: 1.6;
 
-$font-size-h1: 2.5rem !default;
+$font-size-h1: 2.5rem;
+$line-height-h1: 3rem;
 $font-size-h2: 2rem !default;
 $font-size-h3: 1.75rem !default;
 $font-size-h4: 1.5rem !default;

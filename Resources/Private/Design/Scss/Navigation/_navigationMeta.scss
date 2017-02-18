@@ -1,5 +1,6 @@
 .metaNavigation {
   float: right;
+  font-size: rem(16);
   li {
     display: inline-block;
     float: left;
@@ -26,6 +27,7 @@
 .homepage {
   .metaNavigation {
     color: $black;
+    text-shadow: none;
     a {
       color: $black;
     }

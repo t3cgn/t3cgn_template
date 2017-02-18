@@ -5,6 +5,7 @@
 @import "gooeyDesktop";
 
 .navigationPrimary {
+  z-index: 30;
   .navbar-toggler {
     background: inline-image('02_menu_svgs/planet-0-menu.svg');
     background-size: contain;

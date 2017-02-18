@@ -19,19 +19,23 @@ body {
   background-image: inline-image('stars.svg');
   background-size: cover;
   height: 100%;
+  padding-bottom: rem(30);
   width: 100%;
+  footer {
+    bottom: 0;
+    position: absolute;
+    right: rem(20);
+    width: 100%;
+    z-index: 20;
+  }
 }
 
 // Arranges main template
 .container-fluid {
   position: relative;
   z-index: 10;
-  footer {
-    @include make-row();
-    bottom: 0;
-    position: absolute;
-    width: 100%;
-    z-index: 20;
+  &.contentTop {
+    padding-top: rem(80);
   }
   > .content > .col {
     max-width: rem(1280);

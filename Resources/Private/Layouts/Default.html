@@ -1,17 +1,13 @@
 <div id="top"></div>
 <div class="stars contentPage">
-    <header>
-        <f:comment>
-            <f:format.raw>{navLanguage}</f:format.raw>
-        </f:comment>
+    <f:comment>
+        <f:format.raw>{navLanguage}</f:format.raw>
+    </f:comment>
 
-        <f:format.raw>{navPrimaryDesktop}</f:format.raw>
-        <f:format.raw>{navPrimaryMobile}</f:format.raw>
-    </header>
+    <f:format.raw>{navPrimaryDesktop}</f:format.raw>
+    <f:format.raw>{navPrimaryMobile}</f:format.raw>
 
     <f:render section="Main"/>
 
-    <footer class="justify-content-end homepage">
-        <f:format.raw>{navMeta}</f:format.raw>
-    </footer>
+    <f:render partial="PageFooter" arguments="{_all}"/>
 </div>
