@@ -15,7 +15,7 @@
 
   //config
   $menu-items:6+1;
-  $planetnumber: 8;
+  $planetnumber: 6;
   $open-distance:155px;
   $opening-angle:$pi*2;
 
@@ -34,12 +34,28 @@
     transform:translate3d(0,0,0);
     transition:transform ease-out 200ms;
     opacity: 0;
+
     @for $i from 1 through $planetnumber {
-      &:nth-child(#{$i+2}){
+      &:nth-of-type(#{$i+2}){
         transition-duration:180ms;
       }
-      &:nth-child(#{$i}) {
-        & {
+
+      &:nth-of-type(#{random($menu-items)}) {
+        &:before {
+          $randomSize: rem(100);
+          content: '';
+          display: block;
+          width: $randomSize;
+          height: $randomSize;
+        }
+      }
+
+      &:nth-of-type(#{$i}) {
+        &:before {
+          content: '';
+          display: block;
+          width: 80px;
+          height: 80px;
           background: inline-image('02_menu_svgs/planet' + $i + '.svg');
           background-size: contain;
           background-repeat: no-repeat;
@@ -112,13 +128,6 @@
     transition-timing-function:cubic-bezier(0.935, 0.000, 0.340, 1.330);
     @for $i from 1 through $menu-items{
       $angle:(($pi - $opening-angle)/2)+(($opening-angle/($menu-items - 1))*($i - 1));
-
-
-      &:nth-child(#{random($menu-items)}) {
-      $randomSize: rem(100);
-        width: $randomSize;
-        height: $randomSize;
-      }
 
       &:nth-child(#{$i+2}){
         transition-duration:80ms+(100ms*$i);
