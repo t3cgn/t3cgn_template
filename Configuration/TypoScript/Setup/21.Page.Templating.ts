@@ -29,8 +29,12 @@ page.10 {
         headerTitle.value = {$config.headerTitle}
 
         # content
-        inhalt < styles.content.get
-        inhalt.select.where = colPos=1
+        mainTop < styles.content.get
+        mainTop.select.where = colPos=1
+        mainMiddle < styles.content.get
+        mainMiddle.select.where = colPos=2
+        mainBottom < styles.content.get
+        mainBottom.select.where = colPos=3
 
         marginal = CONTENT
         marginal.table = tt_content

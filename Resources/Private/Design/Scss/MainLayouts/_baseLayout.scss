@@ -1,7 +1,6 @@
 // Sets height of html, body, container-fluid to viewport height
 html,
-body,
-.container-fluid {
+body {
   color: $white;
   height: 100%;
 }
@@ -25,7 +24,6 @@ body {
 
 // Arranges main template
 .container-fluid {
-  max-width: rem(1280);
   position: relative;
   z-index: 10;
   footer {
@@ -34,6 +32,9 @@ body {
     position: absolute;
     width: 100%;
     z-index: 20;
+  }
+  > .content > .col {
+    max-width: rem(1280);
   }
 }
 

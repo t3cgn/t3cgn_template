@@ -1,5 +1,25 @@
 <f:layout name="Homepage"/>
 
 <f:section name="Main">
-    <f:format.raw>{inhalt}</f:format.raw>
+    <div class="container-fluid">
+        <div class="row content justify-content-center">
+            <div class="col">
+                <f:format.raw>{mainTop}</f:format.raw>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid backgroundBox">
+        <div class="row content justify-content-center">
+            <div class="col">
+                <f:format.raw>{mainMiddle}</f:format.raw>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row content justify-content-center">
+            <div class="col">
+                <f:format.raw>{mainBottom}</f:format.raw>
+            </div>
+        </div>
+    </div>
 </f:section>

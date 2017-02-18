@@ -5,13 +5,29 @@ mod.web_layout.BackendLayouts {
         config {
             backend_layout {
                 colCount = 1
-                rowCount = 1
+                rowCount = 3
                 rows {
                     1 {
                         columns {
                             1 {
-                                name = main
+                                name = mainTop
                                 colPos = 1
+                            }
+                        }
+                    }
+                    2 {
+                        columns {
+                            1 {
+                                name = mainMiddle
+                                colPos = 2
+                            }
+                        }
+                    }
+                    3 {
+                        columns {
+                            1 {
+                                name = mainBottom
+                                colPos = 3
                             }
                         }
                     }
