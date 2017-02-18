@@ -7,7 +7,7 @@
         [
             'Seiten-Akkordeon Trigger',
             't3cgn_accordiontrigger',
-            'content-image'
+            't3cgn-accordion-trigger'
         ],
         'html',
         'after'
