@@ -11,6 +11,11 @@ body {
   }
 }
 
+// Fonts
+h1, h2, h3, h4 {
+  font-family: $headings-font-family;
+}
+
 h1 {
   font-size: $font-size-h1;
   line-height: $line-height-h1;
@@ -18,11 +23,8 @@ h1 {
 }
 
 h2 {
-
-}
-
-h3 {
-
+  color: $brand-primary;
+  margin-bottom: rem(25);
 }
 
 p {
@@ -46,7 +48,7 @@ p {
     color: $brand-primary;
     font-size: rem(32);
     line-height: rem(38);
-    margin-bottom: rem(20);
+    margin-top: 0;
   }
 }
 
@@ -58,7 +60,25 @@ p {
     }
     h2 {
       font-size: rem(42);
-      margin-bottom: rem(20);
+    }
+  }
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  li {
+    margin-bottom: rem(5);
+    padding-left: rem(20);
+    position: relative;
+    &:before {
+      content: '';
+      display: inline-block;
+      @include fontAwesome($fa-var-angle-right, true);
+      position: absolute;
+      left: 0;
+      top: rem(4);
     }
   }
 }
