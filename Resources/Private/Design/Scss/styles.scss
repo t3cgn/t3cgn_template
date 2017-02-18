@@ -20,13 +20,18 @@
 @import "Mixins/fontAwesome";
 @import "Mixins/buttons";
 
+// Styles
+@import "Base/typography";
+
 // Template
 @import "Base/grid";
 @import "MainLayouts/baseLayout";
 @import "MainLayouts/homepage";
 
-// Styles
-@import "Base/typography";
+// Elements
+@import "Elements/accordion";
+
+
 
 // Navigations
 @import "Navigation/navbarBootstrapOverwrite";

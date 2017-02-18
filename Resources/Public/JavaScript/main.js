@@ -1,8 +1,12 @@
 $( document ).ready(function() {
 
-    T3CGN.parallaxHomepage();
- 
+    if($('.homepage').length) {
+        T3CGN.parallaxHomepage();
+    }
+
     T3CGN.mainNavigation();
 
-    T3CGN.accordionTrigger();
+    if($('.accordionTrigger').length) {
+        T3CGN.accordionTrigger();
+    }
 });

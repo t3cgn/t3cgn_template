@@ -1,0 +1,22 @@
+.accordionTrigger {
+  &:before {
+    @include fontAwesome($fa-var-angle-right, true);
+  }
+  &.open:before {
+    @include fontAwesome($fa-var-angle-down, true);
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.backgroundBox {
+  background: $white;
+  color: $black;
+  margin: rem(45 0);
+  text-shadow: none;
+  .content {
+    padding-bottom: rem(35);
+    padding-top: rem(35);
+  }
+}
