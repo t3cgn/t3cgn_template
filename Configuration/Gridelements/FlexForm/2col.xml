@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3DataStructure>
+    <meta type="array">
+        <langDisable>1</langDisable>
+    </meta>
+    <sheets>
+        <sDEF>
+            <ROOT type="array">
+                <TCEforms>
+                    <sheetTitle>Optionen</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el type="array">
+                    <breakpoint type="array">
+                        <TCEforms type="array">
+                            <label>Breakpoint</label>
+                            <config type="array">
+                                <type>select</type>
+                                <renderType>selectSingle</renderType>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">Small (>576 px)</numIndex>
+                                        <numIndex index="1">sm</numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">Medium (>768 px)</numIndex>
+                                        <numIndex index="1">md</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">Large (>992 px)</numIndex>
+                                        <numIndex index="1">lg</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">X-Large (>1200 px)</numIndex>
+                                        <numIndex index="1">xl</numIndex>
+                                    </numIndex>
+                                </items>
+                            </config>
+                        </TCEforms>
+                    </breakpoint>
+                </el>
+            </ROOT>
+        </sDEF>
+    </sheets>
+</T3DataStructure>

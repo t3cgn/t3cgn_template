@@ -1,0 +1,34 @@
+lib.t3cgn_gridelements {
+    2col < lib.gridelements.defaultGridSetup
+    2col {
+        wrap = <div class="row">|</div>
+        columns {
+            101 < .default
+            101.wrap = <div class="col-md">|</div>
+            #    Aktuell keine Flexform-Config wegen Bug in EXT:gridelements (https://forge.typo3.org/issues/78968)
+            #            101.dataWrap = <div class="col-xs-12 col-{field:flexform_breakpoint}">|</div>
+            102 < .101
+        }
+    }
+
+    3col < .2col
+    3col {
+        columns.103 < .columns.101
+    }
+
+    4col < .2col
+    4col {
+        columns {
+            101.wrap = <div class="col-md-6 col-lg">|</div>
+            102 < .101
+            103 < .101
+            104 < .101
+        }
+    }
+}
+
+tt_content.gridelements_pi1.20.10.setup {
+    t3cgn_2col < lib.t3cgn_gridelements.2col
+    t3cgn_3col < lib.t3cgn_gridelements.3col
+    t3cgn_4col < lib.t3cgn_gridelements.4col
+}
