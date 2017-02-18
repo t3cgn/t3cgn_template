@@ -1,9 +1,11 @@
 .metaNavigation {
   float: right;
   font-size: rem(16);
+  padding: rem(15 0);
   li {
     display: inline-block;
     float: left;
+    padding-left: rem(15);
     a {
       color: $white;
       &:hover {
@@ -11,15 +13,8 @@
         text-decoration: underline;
       }
     }
-    &:after {
-      content: '|';
-      display: inline-block;
-      padding: rem(0 5);
-    }
-    &:last-child {
-      &:after {
-        content: '';
-      }
+    &:not(:last-of-type) {
+      margin-right: 15px;
     }
   }
 }
