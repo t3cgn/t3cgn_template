@@ -16,7 +16,7 @@
   //config
   $menu-items:6+1;
   $planetnumber: 6;
-  $open-distance:155px;
+  $open-distance:195px;
   $opening-angle:$pi*2;
 
   .menu-open{
@@ -32,14 +32,9 @@
     text-align:center;
     line-height:80px;
     transform:translate3d(0,0,0);
-    transition:transform ease-out 200ms;
     opacity: 0;
 
     @for $i from 1 through $planetnumber {
-      &:nth-of-type(#{$i+2}){
-        transition-duration:180ms;
-      }
-
       &:nth-of-type(#{random($menu-items)}) {
         &:before {
           $randomSize: rem(100);
@@ -73,6 +68,10 @@
     box-sizing:border-box;
     font-size:20px;
     text-align:left;
+    .menu-item {
+      opacity: 0;
+      width: 0;
+    }
     &.clicked {
       position:absolute;
       left:50%;
@@ -81,20 +80,21 @@
       margin-left: -190px;
       top: 50%;
       margin-top: -100px;
+      .menu-item {
+        opacity: 1;
+        width: auto;
+      }
     }
   }
 
 
   .menu-item{
-    @for $i from 1 through $menu-items{
-      &:nth-child(#{$i+2}){
-        transition-duration:180ms;
-      }
-    }
+    transform:translate3d(0,0,0);
   }
 
   .menu-open-button{
     background:$white;
+    border: none;
     border-radius:100%;
     margin-left:-40px;
     position:absolute;
@@ -122,14 +122,14 @@
     transform:scale(1.2,1.2) translate3d(0,0,0);
   }
 
-
-  .menu-open:checked~.menu-item{
+  .menu.clicked .menu-item{
     opacity: 1;
+    transition-property: transform;
     transition-timing-function:cubic-bezier(0.935, 0.000, 0.340, 1.330);
     @for $i from 1 through $menu-items{
       $angle:(($pi - $opening-angle)/2)+(($opening-angle/($menu-items - 1))*($i - 1));
 
-      &:nth-child(#{$i+2}){
+      &:nth-of-type(#{$i}){
         transition-duration:80ms+(100ms*$i);
         transform:translate3d(cos($angle)*$open-distance,sin($angle)*$open-distance,0);
       }

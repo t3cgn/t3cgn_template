@@ -45,9 +45,7 @@ lib.navPrimaryDesktop < lib.navPrimary
 lib.navPrimaryDesktop {
     1.wrap (
         <nav class="menu navigationPrimary desktop">
-            <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open"/>
-            <label class="menu-open-button" for="menu-open"></label>
-
+            <button class="menu-open-button" for="menu-open"></button>
             |
         </nav>
     )
