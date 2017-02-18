@@ -16,11 +16,16 @@
 
 // T3CGN specific styles
 // Mixins
+@import "Mixins/fontAwesome";
 @import "Mixins/buttons";
+
 
 // Template
 @import "MainLayouts/baseLayout";
 @import "MainLayouts/homepage";
+
+// Styles
+@import "Base/typography";
 
 // Navigations
 @import "Navigation/navbarBootstrapOverwrite";

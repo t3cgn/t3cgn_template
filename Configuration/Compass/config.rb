@@ -9,11 +9,12 @@ images_dir = '../../Resources/Private/Design/Images'
 generated_images_dir = '../../Resources/Public/Images'
 http_generated_images_path = '../Images'
 fonts_dir = '../../Resources/Public/Fonts'
+http_fonts_path = '../Fonts'
 javascripts_dir = '../../Resources/Public/JavaScript'
 http_javascripts_path = '../JavaScript'
 
 # add_import_path '../../Resources/Private/Design/Vendor/bootstrap/scss'
-additional_import_paths = ['../../Resources/Private/Design/Vendor/bootstrap/scss']
+additional_import_paths = ['../../Resources/Private/Design/Vendor/bootstrap/scss', '../../Resources/Private/Design/Vendor/font-awesome/scss']
 
 # You can select your preferred output style here (can be overridden via the command line):
 # output_style = :expanded or :nested or :compact or :compressed

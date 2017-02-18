@@ -4,3 +4,9 @@
 // Adds Share
 // Regular
 @include font-face("Share-Regular", font-files("Share-TTF/Share-Regular.ttf", "Share-OTF/Share-Regular.otf"));
+// Bold
+@include font-face("Share-Bold", font-files("Share-TTF/Share-Bold.ttf", "Share-OTF/Share-Bold.otf"));
+
+$fa-font-path: '../Fonts/font-awesome';
+@import "font-awesome";
+

@@ -1,0 +1,64 @@
+body {
+  font-size: $font-size-xs;
+  line-height: $line-height-xs;
+  text-shadow: 1px 1px 10px $black;
+}
+
+@include media-breakpoint-up(sm) {
+  body {
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+  }
+}
+
+h1 {
+  font-size: $font-size-h1;
+  line-height: $line-height-h1;
+  color: $brand-primary;
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+p {
+  margin-bottom: rem(15);
+  &.orange,
+  .orange {
+    color: $brand-primary;
+  }
+}
+
+// Special definitions for homepage
+.homepage {
+  h1 {
+    font-size: rem(35);
+    line-height: rem(40);
+    font-family: 'Share-Bold';
+    color: $white;
+    margin-bottom: 0;
+  }
+  h2 {
+    color: $brand-primary;
+    font-size: rem(32);
+    line-height: rem(38);
+    margin-bottom: rem(20);
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .homepage {
+    h1 {
+      font-size: rem(56);
+      margin-bottom: rem(10);
+    }
+    h2 {
+      font-size: rem(42);
+      margin-bottom: rem(20);
+    }
+  }
+}

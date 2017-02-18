@@ -4,14 +4,17 @@ RTE {
         contentCSS = typo3conf/ext/t3cgn_template/Resources/Public/Css/rte.css
         proc {
             allowedClasses (
-              external-link, external-link-new-window, internal-link, internal-link-new-window, download, mail, btn-primary, btn-default
+              external-link, external-link-new-window, internal-link, internal-link-new-window, download, mail, btn-primary, btn-default, orange
             )
             allowedClasses := addToList(btn-primary, btn-default)
         }
 
         buttons {
             link.properties.class.allowedClasses := addToList(btn-primary, btn-default)
+            blockstyle.tags.p.allowedClasses = orange
+            textstyle.tags.span.allowedClasses = orange
         }
+
 
 
         ## nicht benoetigte Klassen entfernen
