@@ -1,4 +1,5 @@
-var mainNavigation = function () {
+var T3CGN = T3CGN || {};
+T3CGN.mainNavigation = function () {
 
     var menuButtonGeneral = $('.menu-open-button');
     var menuButtonDesktop = $('.desktop .menu-open-button');

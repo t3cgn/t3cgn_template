@@ -1,6 +1,6 @@
 $( document ).ready(function() {
 
-    parallaxHomepage();
+    T3CGN.parallaxHomepage();
  
-    mainNavigation();
+    T3CGN.mainNavigation();
 });
