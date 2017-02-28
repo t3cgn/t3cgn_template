@@ -17,8 +17,8 @@ if (!defined('TYPO3_MODE')) {
 $iconRegistry = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Imaging\IconRegistry::class);
 $iconRegistry->registerIcon(
     't3cgn-accordion-trigger',
-    \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
+    \TYPO3\CMS\Core\Imaging\IconProvider\FontawesomeIconProvider::class,
     array(
-        'source' => 'EXT:t3cgn_template/Resources/Public/Icons/accordion-trigger.svg'
+        'name' => 'hand-o-down'
     )
 );
