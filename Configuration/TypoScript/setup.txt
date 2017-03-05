@@ -1,3 +1,3 @@
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:fluid_styled_content/Configuration/TypoScript/Static">
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:t3cgn_template/Configuration/TypoScript/Setup">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:fluid_styled_content/Configuration/TypoScript/Static" extensions="ts">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:t3cgn_template/Configuration/TypoScript/Setup" extensions="ts">
 <INCLUDE_TYPOSCRIPT: source="DIR:EXT:t3cgn_template/Configuration/Gridelements/TypoScript">

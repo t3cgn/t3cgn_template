@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2017-02-11T10:06:14Z" product-name="t3cgn_template">
+        <header/>
+        <body>
+
+            <trans-unit id="tx_t3cgn_domain_model_sponsor.title">
+                <source>Titel</source>
+            </trans-unit>
+
+            <trans-unit id="tx_t3cgn_domain_model_sponsor.link">
+                <source>Link</source>
+            </trans-unit>
+            <trans-unit id="tx_t3cgn_domain_model_sponsor.image">
+                <source>Bild</source>
+            </trans-unit>
+            <trans-unit id="tx_t3cgn_domain_model_sponsor.bodytext">
+                <source>Text</source>
+            </trans-unit>
+            <trans-unit id="t3cgn_accordiontrigger.title">
+                <source>Seiten-Akkordeon Trigger</source>
+            </trans-unit>
+            <trans-unit id="t3cgn_sponsor.title">
+                <source>Sponsoren</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

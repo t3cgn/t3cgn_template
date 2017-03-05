@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="de" datatype="plaintext" original="messages" date="2011-10-17T20:22:32Z" product-name="context_help">
+        <header/>
+        <body>
+            <trans-unit id="tx_contentelements_headersize.description" xml:space="preserve">
+				<source>All visible content on webpages is typically made by "Page Content" records, often referred to as "Content Elements". Content Elements are managed by the "Page" Module which organizes Content Elements in multiple columns and languages.</source>
+			</trans-unit>
+			<trans-unit id="tx_contentelements_headersize.details" xml:space="preserve">
+				<source>"Page Content" records are sortable and can be rearranged. The "Language" and "Column" selectors of the "Page Content" records determines when and where they appear. If you do not change the value of the "Language" and "Column" selectors the Content Element will appear in the default configuration.</source>
+			</trans-unit>
+
+        </body>
+    </file>
+</xliff>
