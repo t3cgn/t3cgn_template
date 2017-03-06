@@ -123,10 +123,8 @@
   }
 
   .menu.clicked .menu-item{
-    //transition-delay: 2s;
     opacity: 1;
     transition-property: transform;
-    //transition-timing-function:cubic-bezier(0.935, 0.000, 0.340, 1.330);
     transition-timing-function:cubic-bezier(1.935, 1.000, 1.340, 2.330);
     @for $i from 1 through $menu-items{
       $angle:(($pi - $opening-angle)/2)+(($opening-angle/($menu-items - 1))*($i - 1));

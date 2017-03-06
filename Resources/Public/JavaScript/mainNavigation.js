@@ -8,6 +8,7 @@ T3CGN.mainNavigation = function () {
     menuButtonGeneral.click(function () {
         $(this).toggleClass('on');
         $('.fadeOutContainer').toggleClass('hide');
+        $('.stars').toggleClass('contentDisabled');
     });
 
     menuButtonDesktop.click(function() {

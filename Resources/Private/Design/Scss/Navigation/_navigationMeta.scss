@@ -27,4 +27,9 @@
       color: $black;
     }
   }
+  &.contentDisabled {
+    a {
+      color: $white;
+    }
+  }
 }
