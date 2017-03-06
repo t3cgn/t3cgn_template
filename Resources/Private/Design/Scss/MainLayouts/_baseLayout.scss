@@ -51,3 +51,21 @@ body {
     transition: visibility 0s 1s, opacity 1s linear;
   }
 }
+
+// Page Navigation
+.pageNavigation {
+    background-repeat: no-repeat;
+    color: $brand-primary;
+    display: block;
+    font-size: rem(120);
+    position: absolute;
+    top: 50%;
+    &.previousPage {
+      left: 2rem;
+      transform: translate(0, -50%);
+    }
+    &.nextPage {
+      right: 2rem;
+      transform: translate(0, -50%);
+    }
+}
